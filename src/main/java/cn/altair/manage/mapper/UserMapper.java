@@ -1,6 +1,8 @@
 package cn.altair.manage.mapper;
 
+import cn.altair.manage.entity.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * The mapper between UserService and UserMapper.xml
@@ -15,5 +17,5 @@ public interface UserMapper {
      *
      * @return username
      */
-    String login();
+    Integer login(@Param("user") User user);
 }

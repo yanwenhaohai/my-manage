@@ -1,5 +1,6 @@
 package cn.altair.manage.service.impl;
 
+import cn.altair.manage.entity.User;
 import cn.altair.manage.mapper.UserMapper;
 import cn.altair.manage.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,10 +20,11 @@ public class UserServiceImpl implements UserService {
 
     /**
      * get username
+     *
      * @return username
      */
     @Override
-    public String login() {
-        return userMapper.login();
+    public Integer login(User user) {
+        return userMapper.login(user);
     }
 }

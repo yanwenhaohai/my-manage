@@ -1,5 +1,7 @@
 package cn.altair.manage.service;
 
+import cn.altair.manage.entity.User;
+
 /**
  * Interface about user's logic
  *
@@ -9,7 +11,9 @@ package cn.altair.manage.service;
 public interface UserService {
     /**
      * get username
+     *
      * @return username
      */
-    String login();
+
+    Integer login(User user);
 }

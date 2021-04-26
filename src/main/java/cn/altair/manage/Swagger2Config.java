@@ -31,7 +31,7 @@ public class Swagger2Config {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Swagger2")
-                .description("SpringBoot集成Swagger2构建RESTful API接口")
+                .description("Manage API接口")
                 .build();
     }
 }
